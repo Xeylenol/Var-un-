@@ -1,4 +1,3 @@
-# PH1202 Lab Work
 
 This repository contains all the code i wrote and will write while exploring the wonderful world of Electromagnetism.
 
