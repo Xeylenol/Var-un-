@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import quad
-
+e0 = 8.854e-12
 def integrand(theta, r, R, lam):
     nu = 2 * lam * R * (r - R * np.cos(theta))
     denom = (R**2 + r**2 - 2 * R * r * np.cos(theta))**1.5
@@ -9,7 +9,7 @@ def integrand(theta, r, R, lam):
 
 def electric_field(r, R, lam):
     integral, _ = quad(integrand, 0, np.pi, args=(r, R, lam))
-    return integral / (4 * np.pi * 8.854e-12)
+    return integral / (4 * np.pi * e0)
 
 #dec variables
 R = 1.0  
