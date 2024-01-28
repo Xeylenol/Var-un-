@@ -6,8 +6,8 @@ k = 9e9
 positions = np.array([[-0.5, 0], [0.5, 0], [0, np.sqrt(3)/2]])
 charges = np.array([1, 1, 1])
 # make grid
-x = np.linspace(-1, 1, 10000)
-y = np.linspace(-1, 1, 10000)
+x = np.linspace(-2, 2, 10500)
+y = np.linspace(-2, 2, 10500)
 X, Y = np.meshgrid(x, y)
 # Calc E on each point in grid
 Ex = np.zeros_like(X)
